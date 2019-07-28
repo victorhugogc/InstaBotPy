@@ -1,0 +1,10 @@
+version: "2"
+  
+services:
+  database:
+    image: "testbotjfloff/alpine-python"
+    build: .
+    hostname: database
+    restart: always
+    ports:
+      - "5432:5432"

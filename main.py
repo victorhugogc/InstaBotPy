@@ -6,15 +6,15 @@ from instabot_py import InstaBot
 bot = InstaBot(
     login="gamaikasound",  # Enter username (lowercase). Do not enter email!
     password="$enh@doGam@yka123",
-    like_per_day=300,
-    comments_per_day=10,
+    like_per_day=500,
+    comments_per_day=25,
     tag_list=["gama", "sound", "underground", "reggae"],
     tag_blacklist=["rain", "thunderstorm"],
     user_blacklist={},
-    max_like_for_one_tag=30,
+    max_like_for_one_tag=50,
     follow_per_day=300,
-    follow_time=1 * 60 * 60,
-    unfollow_per_day=300,
+    follow_time=1 * 72 * 60 * 60,
+    unfollow_per_day=100,
     unlike_per_day=0,
     unfollow_recent_feed=True,
     # If True, the bot will also unfollow people who dont follow you using the recent feed. Default: True
