@@ -1,12 +1,12 @@
 FROM jfloff/alpine-python
 
-WORKDIR /home
+RUN mkdir /home/instabotpy
+WORKDIR /home/instabotpy
 
-RUN git clone https://github.com/danrleywillyan/InstaBotPy
+COPY ./ .
+
 RUN python3 -m pip install instabot-py
 
-WORKDIR /home/InstaBotPy
+VOLUME /home/instabotpy
 
-VOLUME ["/home/instabotpy"]
-
-CMD ["python3", "main.py"]
+CMD ["python3", "gamacidadao.py"]

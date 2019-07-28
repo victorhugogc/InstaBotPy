@@ -1,10 +1,9 @@
 version: "2"
   
 services:
-  database:
+  instabot:
     image: "testbotjfloff/alpine-python"
     build: .
-    hostname: database
-    restart: always
+    hostname: instabot
     ports:
       - "5432:5432"
